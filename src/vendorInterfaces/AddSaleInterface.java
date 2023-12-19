@@ -8,7 +8,9 @@ import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
 public class AddSaleInterface {
+
     public AddSaleInterface() {
+
         JFrame frame = new JFrame("Vendor Form");
         frame.setDefaultCloseOperation(JFrame.EXIT_ON_CLOSE);
 

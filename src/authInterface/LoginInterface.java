@@ -7,6 +7,9 @@ import java.awt.*;
 import java.awt.event.ActionEvent;
 import java.awt.event.ActionListener;
 
+import static utils.Constants.ErrorMessages.*;
+
+
 public class LoginInterface {
     public LoginInterface() {
         JFrame frame = new JFrame("Login Interface");
@@ -46,13 +49,11 @@ public class LoginInterface {
                     frame.dispose(); // Close current frame
                     new VendorHistorySalesInterface(); // Open Interface 2
                 }else if (username.isEmpty() || password.isEmpty()){
-                    errorMessage.setText("username or password are empty !"); // Clear error message if both fields are filled
+                    errorMessage.setText(USERNAME_OR_PASSWORD_EMPTY); // Clear error message if both fields are filled
                 }
                 else{
-                    errorMessage.setText("username or password are incorrect !"); // Clear error message if both fields are incorrect
+                    errorMessage.setText(USERNAME_OR_PASSWORD_INCORRECT); // Clear error message if both fields are incorrect
                 }
-
-
             }
         });
         // Welcome jlabel
